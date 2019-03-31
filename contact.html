@@ -6,41 +6,40 @@
     </head>
     <body>
         <!--extend top nav background full width-->
-        <div id="navBkgd"></div>
-        <!--content centered-->
+        <div id="navBkgd">
+            <div class="container">
+                <header>
+                    <h1>Marie Bourne</h1>
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <!--main content-->
         <div class="container">
-            <!--top nav-->
-            <header>
-                <h1>Marie Bourne</h1>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!--main content-->
             <main>
                 <h2>Contact</h2>
-                <form>
-                    <p>Name</p>
-                    <input type="text" name="name" size="50" class="formField">
-                    <p>Email</p>
-                    <input type="email" name="email" size="50" class="formField">
-                    <p>Message</p>
-                    <textarea name="message" rows="5" cols="145" class="formField"></textarea>
-                    <input type="submit" value="SUBMIT" class="btn">
+                <form action="thank-you.html" method="post">
+                    <p class="formLabel">Name</p>
+                    <input type="text" value="name" width="100" class="formField">
+                    <p class="formLabel">Email</p>
+                    <input type="email" value="email" width="100" class="formField">
+                    <p class="formLabel">Message</p>
+                    <textarea rows="4" cols="145" class="formField"></textarea>
+                    <button type="submit" value="submit" class="btn">SUBMIT</button>
                 </form>
             </main>
-            
         </div>
         <!--extend footer background full width-->
         <div id="footerBkgd">
-                <div class="container">
-                    <footer><p class="copywrite">&copy; Copyright 2019</p></footer>
-                </div>
+            <div class="container">
+                <footer><p class="copywrite">&copy; Copyright 2019</p></footer>
+            </div>
         </div>
-        
     </body>
 </html>
