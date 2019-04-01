@@ -22,7 +22,7 @@ body {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    z-index: -1;
+    /* negative z-index allows pages with longer content to scroll behind the fixed top nav but I commented it out becase it prevents input on the form. z-index: -1; */
 }
 
 header {
@@ -48,15 +48,15 @@ nav {
 }
 
 a:link {
-    color: #480b64;
+    color: #666;
     text-decoration: none;
 }
 
 a:visited {
-    color: #480b64;
+    color: #666;
 }
 a:hover {
-    color: #888;
+    color: #480b64;
 }
 
 .nav li {
@@ -117,7 +117,7 @@ p {
 }
 #footerBkgd {
     background-color: #666;
-    border-top: #480b64 5px solid;
+    border-top: #480b64 8px solid;
     width: 100%;
     height: 40px;
     position: fixed;
