@@ -46,24 +46,34 @@ nav {
     position: absolute;
     right: 0;
 }
+
+a:link {
+    color: #480b64;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #480b64;
+}
+a:hover {
+    color: #888;
+}
+
 .nav li {
     list-style: none;
     display: inline;
     padding: 15px;
 }
-.nav a {
+/*this isn't working yet*/
+.nav ul li a:link {
     color: #666;
     text-decoration: none;
 }
-.nav a:hover {
+
+.nav ul li a:hover {
     color: #480b64;
 }
-a {
-    color: #480b64;
-}
-a:hover {
-    color: #6c9cca;
-}
+
 main {
     position: relative;
     margin-top: 84px;
@@ -97,7 +107,7 @@ p {
     width: 260px;
     height: 260px;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid #666;
 }
 .copywrite {
     color: #fff;
@@ -115,6 +125,13 @@ p {
     bottom: 0;
 }
 /* form styles */
+input {
+    font-size: 100%;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
 .formField {
     line-height: 200%;
     margin-bottom: 20px;
@@ -132,5 +149,6 @@ p {
 .btn button:hover {
     background-color: #666;
 }
+
 
   
