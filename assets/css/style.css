@@ -130,6 +130,7 @@ input {
     width: 100%;
 }
 textarea {
+    font-size: 100%;
     width: 100%;
 }
 .formField {
@@ -137,7 +138,7 @@ textarea {
     margin-bottom: 20px;
 }
 .formLabel {
-    padding-bottom: 0;
+    padding-bottom: 5px;
 }
 .btn {
     background-color: #480b64;
