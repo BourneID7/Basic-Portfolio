@@ -17,12 +17,14 @@ body {
     height: 64px;
     border-bottom: #ccc 3px solid;
     top: 0;
+    z-index: 100;
+
+
 }
 .container {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    /* negative z-index allows pages with longer content to scroll behind the fixed top nav but I commented it out becase it prevents input on the form. z-index: -1; */
 }
 
 header {
@@ -36,6 +38,7 @@ h1 {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    font-size: 30px;
     padding: 24px 20px 5px 20px;
     width: 260px;
     float: left;    
@@ -98,14 +101,14 @@ h2 {
     display: block;
 }  
 p {
-    line-height: 180%;
-    padding-bottom: 30px;
+    line-height: 160%;
+    padding-bottom: 20px;
 }
 .imgBox {
     float: left;
     margin-right: 20px;
     width: 260px;
-    height: 260px;
+    height: 250px;
     overflow: hidden;
     border: 1px solid #666;
 }
@@ -147,7 +150,7 @@ textarea {
     color: #fff; 
     padding: 10px 20px;
 }
-.btn button:hover {
+.btn:hover {
     background-color: #666;
 }
 
